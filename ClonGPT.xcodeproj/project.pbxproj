@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC91626729D42B9B006647D9 /* ClonGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91626629D42B9B006647D9 /* ClonGPTApp.swift */; };
+		CC91626929D42B9B006647D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91626829D42B9B006647D9 /* ContentView.swift */; };
+		CC91626B29D42B9E006647D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC91626A29D42B9E006647D9 /* Assets.xcassets */; };
+		CC91626E29D42B9E006647D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC91626D29D42B9E006647D9 /* Preview Assets.xcassets */; };
+		CC91627829D42B9F006647D9 /* ClonGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91627729D42B9F006647D9 /* ClonGPTTests.swift */; };
+		CC91628229D42B9F006647D9 /* ClonGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91628129D42B9F006647D9 /* ClonGPTUITests.swift */; };
+		CC91628429D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91628329D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC91627429D42B9F006647D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC91625B29D42B9B006647D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC91626229D42B9B006647D9;
+			remoteInfo = ClonGPT;
+		};
+		CC91627E29D42B9F006647D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC91625B29D42B9B006647D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC91626229D42B9B006647D9;
+			remoteInfo = ClonGPT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC91626329D42B9B006647D9 /* ClonGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClonGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC91626629D42B9B006647D9 /* ClonGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonGPTApp.swift; sourceTree = "<group>"; };
+		CC91626829D42B9B006647D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CC91626A29D42B9E006647D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC91626D29D42B9E006647D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CC91627329D42B9F006647D9 /* ClonGPTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClonGPTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC91627729D42B9F006647D9 /* ClonGPTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonGPTTests.swift; sourceTree = "<group>"; };
+		CC91627D29D42B9F006647D9 /* ClonGPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClonGPTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC91628129D42B9F006647D9 /* ClonGPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonGPTUITests.swift; sourceTree = "<group>"; };
+		CC91628329D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonGPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC91626029D42B9B006647D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC91627029D42B9F006647D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC91627A29D42B9F006647D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC91625A29D42B9B006647D9 = {
+			isa = PBXGroup;
+			children = (
+				CC91626529D42B9B006647D9 /* ClonGPT */,
+				CC91627629D42B9F006647D9 /* ClonGPTTests */,
+				CC91628029D42B9F006647D9 /* ClonGPTUITests */,
+				CC91626429D42B9B006647D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC91626429D42B9B006647D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC91626329D42B9B006647D9 /* ClonGPT.app */,
+				CC91627329D42B9F006647D9 /* ClonGPTTests.xctest */,
+				CC91627D29D42B9F006647D9 /* ClonGPTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC91626529D42B9B006647D9 /* ClonGPT */ = {
+			isa = PBXGroup;
+			children = (
+				CC91626629D42B9B006647D9 /* ClonGPTApp.swift */,
+				CC91626829D42B9B006647D9 /* ContentView.swift */,
+				CC91626A29D42B9E006647D9 /* Assets.xcassets */,
+				CC91626C29D42B9E006647D9 /* Preview Content */,
+			);
+			path = ClonGPT;
+			sourceTree = "<group>";
+		};
+		CC91626C29D42B9E006647D9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CC91626D29D42B9E006647D9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC91627629D42B9F006647D9 /* ClonGPTTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC91627729D42B9F006647D9 /* ClonGPTTests.swift */,
+			);
+			path = ClonGPTTests;
+			sourceTree = "<group>";
+		};
+		CC91628029D42B9F006647D9 /* ClonGPTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC91628129D42B9F006647D9 /* ClonGPTUITests.swift */,
+				CC91628329D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift */,
+			);
+			path = ClonGPTUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC91626229D42B9B006647D9 /* ClonGPT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC91628729D42B9F006647D9 /* Build configuration list for PBXNativeTarget "ClonGPT" */;
+			buildPhases = (
+				CC91625F29D42B9B006647D9 /* Sources */,
+				CC91626029D42B9B006647D9 /* Frameworks */,
+				CC91626129D42B9B006647D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClonGPT;
+			productName = ClonGPT;
+			productReference = CC91626329D42B9B006647D9 /* ClonGPT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC91627229D42B9F006647D9 /* ClonGPTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC91628A29D42B9F006647D9 /* Build configuration list for PBXNativeTarget "ClonGPTTests" */;
+			buildPhases = (
+				CC91626F29D42B9F006647D9 /* Sources */,
+				CC91627029D42B9F006647D9 /* Frameworks */,
+				CC91627129D42B9F006647D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC91627529D42B9F006647D9 /* PBXTargetDependency */,
+			);
+			name = ClonGPTTests;
+			productName = ClonGPTTests;
+			productReference = CC91627329D42B9F006647D9 /* ClonGPTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC91627C29D42B9F006647D9 /* ClonGPTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC91628D29D42B9F006647D9 /* Build configuration list for PBXNativeTarget "ClonGPTUITests" */;
+			buildPhases = (
+				CC91627929D42B9F006647D9 /* Sources */,
+				CC91627A29D42B9F006647D9 /* Frameworks */,
+				CC91627B29D42B9F006647D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC91627F29D42B9F006647D9 /* PBXTargetDependency */,
+			);
+			name = ClonGPTUITests;
+			productName = ClonGPTUITests;
+			productReference = CC91627D29D42B9F006647D9 /* ClonGPTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC91625B29D42B9B006647D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CC91626229D42B9B006647D9 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CC91627229D42B9F006647D9 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CC91626229D42B9B006647D9;
+					};
+					CC91627C29D42B9F006647D9 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CC91626229D42B9B006647D9;
+					};
+				};
+			};
+			buildConfigurationList = CC91625E29D42B9B006647D9 /* Build configuration list for PBXProject "ClonGPT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC91625A29D42B9B006647D9;
+			productRefGroup = CC91626429D42B9B006647D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC91626229D42B9B006647D9 /* ClonGPT */,
+				CC91627229D42B9F006647D9 /* ClonGPTTests */,
+				CC91627C29D42B9F006647D9 /* ClonGPTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC91626129D42B9B006647D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC91626E29D42B9E006647D9 /* Preview Assets.xcassets in Resources */,
+				CC91626B29D42B9E006647D9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC91627129D42B9F006647D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC91627B29D42B9F006647D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC91625F29D42B9B006647D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC91626929D42B9B006647D9 /* ContentView.swift in Sources */,
+				CC91626729D42B9B006647D9 /* ClonGPTApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC91626F29D42B9F006647D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC91627829D42B9F006647D9 /* ClonGPTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC91627929D42B9F006647D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC91628429D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift in Sources */,
+				CC91628229D42B9F006647D9 /* ClonGPTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC91627529D42B9F006647D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC91626229D42B9B006647D9 /* ClonGPT */;
+			targetProxy = CC91627429D42B9F006647D9 /* PBXContainerItemProxy */;
+		};
+		CC91627F29D42B9F006647D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC91626229D42B9B006647D9 /* ClonGPT */;
+			targetProxy = CC91627E29D42B9F006647D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CC91628529D42B9F006647D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC91628629D42B9F006647D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC91628829D42B9F006647D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ClonGPT/Preview Content\"";
+				DEVELOPMENT_TEAM = ZYCT87WATY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC91628929D42B9F006647D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ClonGPT/Preview Content\"";
+				DEVELOPMENT_TEAM = ZYCT87WATY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC91628B29D42B9F006647D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYCT87WATY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClonGPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClonGPT";
+			};
+			name = Debug;
+		};
+		CC91628C29D42B9F006647D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYCT87WATY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClonGPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClonGPT";
+			};
+			name = Release;
+		};
+		CC91628E29D42B9F006647D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYCT87WATY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClonGPT;
+			};
+			name = Debug;
+		};
+		CC91628F29D42B9F006647D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYCT87WATY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClonGPT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC91625E29D42B9B006647D9 /* Build configuration list for PBXProject "ClonGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC91628529D42B9F006647D9 /* Debug */,
+				CC91628629D42B9F006647D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC91628729D42B9F006647D9 /* Build configuration list for PBXNativeTarget "ClonGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC91628829D42B9F006647D9 /* Debug */,
+				CC91628929D42B9F006647D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC91628A29D42B9F006647D9 /* Build configuration list for PBXNativeTarget "ClonGPTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC91628B29D42B9F006647D9 /* Debug */,
+				CC91628C29D42B9F006647D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC91628D29D42B9F006647D9 /* Build configuration list for PBXNativeTarget "ClonGPTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC91628E29D42B9F006647D9 /* Debug */,
+				CC91628F29D42B9F006647D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC91625B29D42B9B006647D9 /* Project object */;
+}
