@@ -14,6 +14,7 @@
 		CC91627829D42B9F006647D9 /* ClonGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91627729D42B9F006647D9 /* ClonGPTTests.swift */; };
 		CC91628229D42B9F006647D9 /* ClonGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91628129D42B9F006647D9 /* ClonGPTUITests.swift */; };
 		CC91628429D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91628329D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift */; };
+		CC91629229D43AE8006647D9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91629129D43AE8006647D9 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		CC91627D29D42B9F006647D9 /* ClonGPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClonGPTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC91628129D42B9F006647D9 /* ClonGPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonGPTUITests.swift; sourceTree = "<group>"; };
 		CC91628329D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonGPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CC91629029D4365C006647D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CC91629129D43AE8006647D9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +97,12 @@
 		CC91626529D42B9B006647D9 /* ClonGPT */ = {
 			isa = PBXGroup;
 			children = (
+				CC91629029D4365C006647D9 /* Info.plist */,
 				CC91626629D42B9B006647D9 /* ClonGPTApp.swift */,
 				CC91626829D42B9B006647D9 /* ContentView.swift */,
 				CC91626A29D42B9E006647D9 /* Assets.xcassets */,
 				CC91626C29D42B9E006647D9 /* Preview Content */,
+				CC91629129D43AE8006647D9 /* Model.swift */,
 			);
 			path = ClonGPT;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC91629229D43AE8006647D9 /* Model.swift in Sources */,
 				CC91626929D42B9B006647D9 /* ContentView.swift in Sources */,
 				CC91626729D42B9B006647D9 /* ClonGPTApp.swift in Sources */,
 			);
@@ -420,7 +426,7 @@
 				DEVELOPMENT_TEAM = ZYCT87WATY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = ClonGPT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -449,7 +455,7 @@
 				DEVELOPMENT_TEAM = ZYCT87WATY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = ClonGPT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
