@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC0AEE0329D45892009AAADD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0AEE0229D45892009AAADD /* Launch Screen.storyboard */; };
 		CC91626729D42B9B006647D9 /* ClonGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91626629D42B9B006647D9 /* ClonGPTApp.swift */; };
 		CC91626929D42B9B006647D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91626829D42B9B006647D9 /* ContentView.swift */; };
 		CC91626B29D42B9E006647D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC91626A29D42B9E006647D9 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC0AEE0229D45892009AAADD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CC91626329D42B9B006647D9 /* ClonGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClonGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC91626629D42B9B006647D9 /* ClonGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonGPTApp.swift; sourceTree = "<group>"; };
 		CC91626829D42B9B006647D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,9 +102,10 @@
 				CC91629029D4365C006647D9 /* Info.plist */,
 				CC91626629D42B9B006647D9 /* ClonGPTApp.swift */,
 				CC91626829D42B9B006647D9 /* ContentView.swift */,
-				CC91626A29D42B9E006647D9 /* Assets.xcassets */,
-				CC91626C29D42B9E006647D9 /* Preview Content */,
 				CC91629129D43AE8006647D9 /* Model.swift */,
+				CC91626A29D42B9E006647D9 /* Assets.xcassets */,
+				CC0AEE0229D45892009AAADD /* Launch Screen.storyboard */,
+				CC91626C29D42B9E006647D9 /* Preview Content */,
 			);
 			path = ClonGPT;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0AEE0329D45892009AAADD /* Launch Screen.storyboard in Resources */,
 				CC91626E29D42B9E006647D9 /* Preview Assets.xcassets in Resources */,
 				CC91626B29D42B9E006647D9 /* Assets.xcassets in Resources */,
 			);
@@ -420,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ClonGPT/Preview Content\"";
@@ -429,6 +434,7 @@
 				INFOPLIST_FILE = ClonGPT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ClonGPT/Preview Content\"";
@@ -458,6 +465,7 @@
 				INFOPLIST_FILE = ClonGPT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
