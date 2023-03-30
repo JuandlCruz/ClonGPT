@@ -16,6 +16,7 @@
 		CC91628229D42B9F006647D9 /* ClonGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91628129D42B9F006647D9 /* ClonGPTUITests.swift */; };
 		CC91628429D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91628329D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift */; };
 		CC91629229D43AE8006647D9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91629129D43AE8006647D9 /* Model.swift */; };
+		CCD4DF2829D5B2AD004A3860 /* GPTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4DF2729D5B2AD004A3860 /* GPTViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CC91628329D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonGPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CC91629029D4365C006647D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CC91629129D43AE8006647D9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CCD4DF2729D5B2AD004A3860 /* GPTViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPTViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				CC91629029D4365C006647D9 /* Info.plist */,
 				CC91626629D42B9B006647D9 /* ClonGPTApp.swift */,
+				CCD4DF2729D5B2AD004A3860 /* GPTViewModel.swift */,
 				CC91626829D42B9B006647D9 /* ContentView.swift */,
 				CC91629129D43AE8006647D9 /* Model.swift */,
 				CC91626A29D42B9E006647D9 /* Assets.xcassets */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD4DF2829D5B2AD004A3860 /* GPTViewModel.swift in Sources */,
 				CC91629229D43AE8006647D9 /* Model.swift in Sources */,
 				CC91626929D42B9B006647D9 /* ContentView.swift in Sources */,
 				CC91626729D42B9B006647D9 /* ClonGPTApp.swift in Sources */,
