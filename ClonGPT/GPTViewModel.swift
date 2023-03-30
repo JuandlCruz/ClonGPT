@@ -9,8 +9,7 @@ import Foundation
 
 final class GPTViewModel: ObservableObject {
     
-    var API_KEY = "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"
-    
+    @Published var API_KEY = UserDefaults.standard.string(forKey: "ChatGPTAPIKey") ?? ""
     @Published var chat: [Message] = []
     @Published var newLine = ""
     @Published var showError = false
@@ -28,6 +27,7 @@ final class GPTViewModel: ObservableObject {
     }
     
     func postChat(conversation: [Message]) async throws -> [Message] {
+        print(API_KEY)
         let url = URL(string: "https://api.openai.com/v1/chat/completions")
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "POST"

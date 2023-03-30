@@ -9,10 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var vm = GPTViewModel()
+    @State private var showingAPISettings = false
     
     var body: some View {
         NavigationStack {
             VStack {
+                Button(action: {
+                    self.showingAPISettings = true
+                }) {
+                    Text("Configurar API")
+                }
+                .sheet(isPresented: $showingAPISettings) {
+                    APISettingsView()
+                }
+                
                 ScrollView {
                     ScrollViewReader { reader in
                         ForEach(vm.chat) { message in
@@ -58,9 +68,9 @@ struct ContentView: View {
                 HStack(alignment: .bottom) {
                     TextField("Escriba un mensaje", text: $vm.newLine)
                     Button(action: {
-                        Task {
-                            await vm.postLine()
-                        }
+                            Task {
+                                await vm.postLine()
+                            }
                     }, label: {
                         Text("Enviar")
                     })

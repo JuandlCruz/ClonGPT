@@ -17,6 +17,7 @@
 		CC91628429D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91628329D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift */; };
 		CC91629229D43AE8006647D9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91629129D43AE8006647D9 /* Model.swift */; };
 		CCD4DF2829D5B2AD004A3860 /* GPTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4DF2729D5B2AD004A3860 /* GPTViewModel.swift */; };
+		CCD4DF2D29D5B7DC004A3860 /* ApiSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4DF2C29D5B7DC004A3860 /* ApiSettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		CC91629029D4365C006647D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CC91629129D43AE8006647D9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CCD4DF2729D5B2AD004A3860 /* GPTViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPTViewModel.swift; sourceTree = "<group>"; };
+		CCD4DF2B29D5B66F004A3860 /* ClonGPT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClonGPT.entitlements; sourceTree = "<group>"; };
+		CCD4DF2C29D5B7DC004A3860 /* ApiSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		CC91626529D42B9B006647D9 /* ClonGPT */ = {
 			isa = PBXGroup;
 			children = (
+				CCD4DF2B29D5B66F004A3860 /* ClonGPT.entitlements */,
 				CC91629029D4365C006647D9 /* Info.plist */,
 				CC91626629D42B9B006647D9 /* ClonGPTApp.swift */,
 				CCD4DF2729D5B2AD004A3860 /* GPTViewModel.swift */,
@@ -109,6 +113,7 @@
 				CC91626A29D42B9E006647D9 /* Assets.xcassets */,
 				CC0AEE0229D45892009AAADD /* Launch Screen.storyboard */,
 				CC91626C29D42B9E006647D9 /* Preview Content */,
+				CCD4DF2C29D5B7DC004A3860 /* ApiSettingsView.swift */,
 			);
 			path = ClonGPT;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCD4DF2829D5B2AD004A3860 /* GPTViewModel.swift in Sources */,
+				CCD4DF2D29D5B7DC004A3860 /* ApiSettingsView.swift in Sources */,
 				CC91629229D43AE8006647D9 /* Model.swift in Sources */,
 				CC91626929D42B9B006647D9 /* ContentView.swift in Sources */,
 				CC91626729D42B9B006647D9 /* ClonGPTApp.swift in Sources */,
@@ -429,13 +435,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = ClonGPT/ClonGPT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ClonGPT/Preview Content\"";
-				DEVELOPMENT_TEAM = ZYCT87WATY;
+				DEVELOPMENT_TEAM = QB22A345HZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClonGPT/Info.plist;
+				INFOPLIST_KEY_NSSiriUsageDescription = "Se usará siri para permitir enviar mensajes a una api";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
@@ -446,7 +454,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPTe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -460,13 +468,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = ClonGPT/ClonGPT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ClonGPT/Preview Content\"";
-				DEVELOPMENT_TEAM = ZYCT87WATY;
+				DEVELOPMENT_TEAM = QB22A345HZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClonGPT/Info.plist;
+				INFOPLIST_KEY_NSSiriUsageDescription = "Se usará siri para permitir enviar mensajes a una api";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
@@ -477,7 +487,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPTe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

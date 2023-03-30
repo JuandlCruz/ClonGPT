@@ -4,7 +4,8 @@
 <dict>
 	<key>NSUserActivityTypes</key>
 	<array>
-		<string>IntentIntent</string>
+		<string>INSendMessageIntent</string>
+		<string>INSendMessageIntentIntent</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
