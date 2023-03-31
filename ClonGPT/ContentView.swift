@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
     @ObservedObject var vm = GPTViewModel()
     @State private var showingAPISettings = false
+    let synthesizer = AVSpeechSynthesizer()
     
     var body: some View {
         NavigationStack {
@@ -61,6 +63,9 @@ struct ContentView: View {
                         .onChange(of: vm.chat) { newValue in
                             if let last = newValue.last {
                                 reader.scrollTo(last.id, anchor: .bottom)
+                                if last.role != "user" {
+                                    synthesizer.speak(AVSpeechUtterance(string: last.content))
+                                }
                             }
                         }
                     }
