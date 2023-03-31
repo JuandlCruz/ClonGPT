@@ -12,30 +12,51 @@
 		CC91626929D42B9B006647D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91626829D42B9B006647D9 /* ContentView.swift */; };
 		CC91626B29D42B9E006647D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC91626A29D42B9E006647D9 /* Assets.xcassets */; };
 		CC91626E29D42B9E006647D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC91626D29D42B9E006647D9 /* Preview Assets.xcassets */; };
-		CC91627829D42B9F006647D9 /* ClonGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91627729D42B9F006647D9 /* ClonGPTTests.swift */; };
-		CC91628229D42B9F006647D9 /* ClonGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91628129D42B9F006647D9 /* ClonGPTUITests.swift */; };
-		CC91628429D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91628329D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift */; };
 		CC91629229D43AE8006647D9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91629129D43AE8006647D9 /* Model.swift */; };
 		CCD4DF2829D5B2AD004A3860 /* GPTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4DF2729D5B2AD004A3860 /* GPTViewModel.swift */; };
 		CCD4DF2D29D5B7DC004A3860 /* ApiSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4DF2C29D5B7DC004A3860 /* ApiSettingsView.swift */; };
+		CCFC1EAC29D6B154008FE10E /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFC1EAB29D6B154008FE10E /* Intents.framework */; };
+		CCFC1EAF29D6B154008FE10E /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC1EAE29D6B154008FE10E /* IntentHandler.swift */; };
+		CCFC1EB329D6B154008FE10E /* SiriIntent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CCFC1EA929D6B154008FE10E /* SiriIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CCFC1EBE29D6B397008FE10E /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFC1EBD29D6B397008FE10E /* IntentsUI.framework */; };
+		CCFC1EC129D6B397008FE10E /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC1EC029D6B397008FE10E /* IntentViewController.swift */; };
+		CCFC1EC429D6B397008FE10E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFC1EC229D6B397008FE10E /* MainInterface.storyboard */; };
+		CCFC1EC829D6B397008FE10E /* SiriIntentUI.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CCFC1EBC29D6B397008FE10E /* SiriIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CCFC1ECC29D6C48C008FE10E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91629129D43AE8006647D9 /* Model.swift */; };
+		CCFC1ECD29D6C4B9008FE10E /* GPTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4DF2729D5B2AD004A3860 /* GPTViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CC91627429D42B9F006647D9 /* PBXContainerItemProxy */ = {
+		CCFC1EB129D6B154008FE10E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CC91625B29D42B9B006647D9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CC91626229D42B9B006647D9;
-			remoteInfo = ClonGPT;
+			remoteGlobalIDString = CCFC1EA829D6B154008FE10E;
+			remoteInfo = SiriIntent;
 		};
-		CC91627E29D42B9F006647D9 /* PBXContainerItemProxy */ = {
+		CCFC1EC629D6B397008FE10E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CC91625B29D42B9B006647D9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CC91626229D42B9B006647D9;
-			remoteInfo = ClonGPT;
+			remoteGlobalIDString = CCFC1EBB29D6B397008FE10E;
+			remoteInfo = SiriIntentUI;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CCFC1EB729D6B154008FE10E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CCFC1EB329D6B154008FE10E /* SiriIntent.appex in Embed Foundation Extensions */,
+				CCFC1EC829D6B397008FE10E /* SiriIntentUI.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CC0AEE0229D45892009AAADD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -44,16 +65,22 @@
 		CC91626829D42B9B006647D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC91626A29D42B9E006647D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC91626D29D42B9E006647D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CC91627329D42B9F006647D9 /* ClonGPTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClonGPTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC91627729D42B9F006647D9 /* ClonGPTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonGPTTests.swift; sourceTree = "<group>"; };
-		CC91627D29D42B9F006647D9 /* ClonGPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClonGPTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC91628129D42B9F006647D9 /* ClonGPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonGPTUITests.swift; sourceTree = "<group>"; };
-		CC91628329D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonGPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CC91629029D4365C006647D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CC91629129D43AE8006647D9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CCD4DF2729D5B2AD004A3860 /* GPTViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPTViewModel.swift; sourceTree = "<group>"; };
 		CCD4DF2B29D5B66F004A3860 /* ClonGPT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClonGPT.entitlements; sourceTree = "<group>"; };
 		CCD4DF2C29D5B7DC004A3860 /* ApiSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSettingsView.swift; sourceTree = "<group>"; };
+		CCFC1EA929D6B154008FE10E /* SiriIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCFC1EAB29D6B154008FE10E /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		CCFC1EAE29D6B154008FE10E /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		CCFC1EB029D6B154008FE10E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCFC1EBC29D6B397008FE10E /* SiriIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCFC1EBD29D6B397008FE10E /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		CCFC1EC029D6B397008FE10E /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		CCFC1EC329D6B397008FE10E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CCFC1EC529D6B397008FE10E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCFC1ECE29D6E779008FE10E /* SiriIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriIntent.entitlements; sourceTree = "<group>"; };
+		CCFC1ECF29D6E799008FE10E /* SiriIntentUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriIntentUI.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,17 +91,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC91627029D42B9F006647D9 /* Frameworks */ = {
+		CCFC1EA629D6B154008FE10E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCFC1EAC29D6B154008FE10E /* Intents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC91627A29D42B9F006647D9 /* Frameworks */ = {
+		CCFC1EB929D6B397008FE10E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCFC1EBE29D6B397008FE10E /* IntentsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,8 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				CC91626529D42B9B006647D9 /* ClonGPT */,
-				CC91627629D42B9F006647D9 /* ClonGPTTests */,
-				CC91628029D42B9F006647D9 /* ClonGPTUITests */,
+				CCFC1EAD29D6B154008FE10E /* SiriIntent */,
+				CCFC1EBF29D6B397008FE10E /* SiriIntentUI */,
+				CCFC1EAA29D6B154008FE10E /* Frameworks */,
 				CC91626429D42B9B006647D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,8 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				CC91626329D42B9B006647D9 /* ClonGPT.app */,
-				CC91627329D42B9F006647D9 /* ClonGPTTests.xctest */,
-				CC91627D29D42B9F006647D9 /* ClonGPTUITests.xctest */,
+				CCFC1EA929D6B154008FE10E /* SiriIntent.appex */,
+				CCFC1EBC29D6B397008FE10E /* SiriIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,15 +134,15 @@
 		CC91626529D42B9B006647D9 /* ClonGPT */ = {
 			isa = PBXGroup;
 			children = (
+				CC91626A29D42B9E006647D9 /* Assets.xcassets */,
+				CC91626C29D42B9E006647D9 /* Preview Content */,
+				CC0AEE0229D45892009AAADD /* Launch Screen.storyboard */,
 				CCD4DF2B29D5B66F004A3860 /* ClonGPT.entitlements */,
 				CC91629029D4365C006647D9 /* Info.plist */,
 				CC91626629D42B9B006647D9 /* ClonGPTApp.swift */,
 				CCD4DF2729D5B2AD004A3860 /* GPTViewModel.swift */,
 				CC91626829D42B9B006647D9 /* ContentView.swift */,
 				CC91629129D43AE8006647D9 /* Model.swift */,
-				CC91626A29D42B9E006647D9 /* Assets.xcassets */,
-				CC0AEE0229D45892009AAADD /* Launch Screen.storyboard */,
-				CC91626C29D42B9E006647D9 /* Preview Content */,
 				CCD4DF2C29D5B7DC004A3860 /* ApiSettingsView.swift */,
 			);
 			path = ClonGPT;
@@ -126,21 +156,34 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		CC91627629D42B9F006647D9 /* ClonGPTTests */ = {
+		CCFC1EAA29D6B154008FE10E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CC91627729D42B9F006647D9 /* ClonGPTTests.swift */,
+				CCFC1EAB29D6B154008FE10E /* Intents.framework */,
+				CCFC1EBD29D6B397008FE10E /* IntentsUI.framework */,
 			);
-			path = ClonGPTTests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CC91628029D42B9F006647D9 /* ClonGPTUITests */ = {
+		CCFC1EAD29D6B154008FE10E /* SiriIntent */ = {
 			isa = PBXGroup;
 			children = (
-				CC91628129D42B9F006647D9 /* ClonGPTUITests.swift */,
-				CC91628329D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift */,
+				CCFC1ECE29D6E779008FE10E /* SiriIntent.entitlements */,
+				CCFC1EAE29D6B154008FE10E /* IntentHandler.swift */,
+				CCFC1EB029D6B154008FE10E /* Info.plist */,
 			);
-			path = ClonGPTUITests;
+			path = SiriIntent;
+			sourceTree = "<group>";
+		};
+		CCFC1EBF29D6B397008FE10E /* SiriIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				CCFC1ECF29D6E799008FE10E /* SiriIntentUI.entitlements */,
+				CCFC1EC029D6B397008FE10E /* IntentViewController.swift */,
+				CCFC1EC229D6B397008FE10E /* MainInterface.storyboard */,
+				CCFC1EC529D6B397008FE10E /* Info.plist */,
+			);
+			path = SiriIntentUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,51 +196,52 @@
 				CC91625F29D42B9B006647D9 /* Sources */,
 				CC91626029D42B9B006647D9 /* Frameworks */,
 				CC91626129D42B9B006647D9 /* Resources */,
+				CCFC1EB729D6B154008FE10E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CCFC1EB229D6B154008FE10E /* PBXTargetDependency */,
+				CCFC1EC729D6B397008FE10E /* PBXTargetDependency */,
 			);
 			name = ClonGPT;
 			productName = ClonGPT;
 			productReference = CC91626329D42B9B006647D9 /* ClonGPT.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CC91627229D42B9F006647D9 /* ClonGPTTests */ = {
+		CCFC1EA829D6B154008FE10E /* SiriIntent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC91628A29D42B9F006647D9 /* Build configuration list for PBXNativeTarget "ClonGPTTests" */;
+			buildConfigurationList = CCFC1EB429D6B154008FE10E /* Build configuration list for PBXNativeTarget "SiriIntent" */;
 			buildPhases = (
-				CC91626F29D42B9F006647D9 /* Sources */,
-				CC91627029D42B9F006647D9 /* Frameworks */,
-				CC91627129D42B9F006647D9 /* Resources */,
+				CCFC1EA529D6B154008FE10E /* Sources */,
+				CCFC1EA629D6B154008FE10E /* Frameworks */,
+				CCFC1EA729D6B154008FE10E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CC91627529D42B9F006647D9 /* PBXTargetDependency */,
 			);
-			name = ClonGPTTests;
-			productName = ClonGPTTests;
-			productReference = CC91627329D42B9F006647D9 /* ClonGPTTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = SiriIntent;
+			productName = SiriIntent;
+			productReference = CCFC1EA929D6B154008FE10E /* SiriIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
-		CC91627C29D42B9F006647D9 /* ClonGPTUITests */ = {
+		CCFC1EBB29D6B397008FE10E /* SiriIntentUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC91628D29D42B9F006647D9 /* Build configuration list for PBXNativeTarget "ClonGPTUITests" */;
+			buildConfigurationList = CCFC1EC929D6B397008FE10E /* Build configuration list for PBXNativeTarget "SiriIntentUI" */;
 			buildPhases = (
-				CC91627929D42B9F006647D9 /* Sources */,
-				CC91627A29D42B9F006647D9 /* Frameworks */,
-				CC91627B29D42B9F006647D9 /* Resources */,
+				CCFC1EB829D6B397008FE10E /* Sources */,
+				CCFC1EB929D6B397008FE10E /* Frameworks */,
+				CCFC1EBA29D6B397008FE10E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CC91627F29D42B9F006647D9 /* PBXTargetDependency */,
 			);
-			name = ClonGPTUITests;
-			productName = ClonGPTUITests;
-			productReference = CC91627D29D42B9F006647D9 /* ClonGPTUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = SiriIntentUI;
+			productName = SiriIntentUI;
+			productReference = CCFC1EBC29D6B397008FE10E /* SiriIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -212,13 +256,11 @@
 					CC91626229D42B9B006647D9 = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					CC91627229D42B9F006647D9 = {
+					CCFC1EA829D6B154008FE10E = {
 						CreatedOnToolsVersion = 14.2;
-						TestTargetID = CC91626229D42B9B006647D9;
 					};
-					CC91627C29D42B9F006647D9 = {
+					CCFC1EBB29D6B397008FE10E = {
 						CreatedOnToolsVersion = 14.2;
-						TestTargetID = CC91626229D42B9B006647D9;
 					};
 				};
 			};
@@ -236,8 +278,8 @@
 			projectRoot = "";
 			targets = (
 				CC91626229D42B9B006647D9 /* ClonGPT */,
-				CC91627229D42B9F006647D9 /* ClonGPTTests */,
-				CC91627C29D42B9F006647D9 /* ClonGPTUITests */,
+				CCFC1EA829D6B154008FE10E /* SiriIntent */,
+				CCFC1EBB29D6B397008FE10E /* SiriIntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -253,17 +295,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC91627129D42B9F006647D9 /* Resources */ = {
+		CCFC1EA729D6B154008FE10E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC91627B29D42B9F006647D9 /* Resources */ = {
+		CCFC1EBA29D6B397008FE10E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCFC1EC429D6B397008FE10E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,37 +325,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC91626F29D42B9F006647D9 /* Sources */ = {
+		CCFC1EA529D6B154008FE10E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC91627829D42B9F006647D9 /* ClonGPTTests.swift in Sources */,
+				CCFC1ECD29D6C4B9008FE10E /* GPTViewModel.swift in Sources */,
+				CCFC1EAF29D6B154008FE10E /* IntentHandler.swift in Sources */,
+				CCFC1ECC29D6C48C008FE10E /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC91627929D42B9F006647D9 /* Sources */ = {
+		CCFC1EB829D6B397008FE10E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC91628429D42B9F006647D9 /* ClonGPTUITestsLaunchTests.swift in Sources */,
-				CC91628229D42B9F006647D9 /* ClonGPTUITests.swift in Sources */,
+				CCFC1EC129D6B397008FE10E /* IntentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CC91627529D42B9F006647D9 /* PBXTargetDependency */ = {
+		CCFC1EB229D6B154008FE10E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CC91626229D42B9B006647D9 /* ClonGPT */;
-			targetProxy = CC91627429D42B9F006647D9 /* PBXContainerItemProxy */;
+			target = CCFC1EA829D6B154008FE10E /* SiriIntent */;
+			targetProxy = CCFC1EB129D6B154008FE10E /* PBXContainerItemProxy */;
 		};
-		CC91627F29D42B9F006647D9 /* PBXTargetDependency */ = {
+		CCFC1EC729D6B397008FE10E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CC91626229D42B9B006647D9 /* ClonGPT */;
-			targetProxy = CC91627E29D42B9F006647D9 /* PBXContainerItemProxy */;
+			target = CCFC1EBB29D6B397008FE10E /* SiriIntentUI */;
+			targetProxy = CCFC1EC629D6B397008FE10E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCFC1EC229D6B397008FE10E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCFC1EC329D6B397008FE10E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CC91628529D42B9F006647D9 /* Debug */ = {
@@ -432,6 +487,7 @@
 		CC91628829D42B9F006647D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -443,6 +499,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClonGPT/Info.plist;
+				INFOPLIST_KEY_NSContactsUsageDescription = "Se requiere acceso a contactos para permitir el envío de mensajes a través de Siri.";
 				INFOPLIST_KEY_NSSiriUsageDescription = "Se usará siri para permitir enviar mensajes a una api";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -465,6 +522,7 @@
 		CC91628929D42B9F006647D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -476,6 +534,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClonGPT/Info.plist;
+				INFOPLIST_KEY_NSContactsUsageDescription = "Se requiere acceso a contactos para permitir el envío de mensajes a través de Siri.";
 				INFOPLIST_KEY_NSSiriUsageDescription = "Se usará siri para permitir enviar mensajes a una api";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -495,79 +554,107 @@
 			};
 			name = Release;
 		};
-		CC91628B29D42B9F006647D9 /* Debug */ = {
+		CCFC1EB529D6B154008FE10E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_ENTITLEMENTS = SiriIntent/SiriIntent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZYCT87WATY;
+				DEVELOPMENT_TEAM = QB22A345HZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				INFOPLIST_FILE = SiriIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SiriIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPTTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPTe.SiriIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClonGPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClonGPT";
 			};
 			name = Debug;
 		};
-		CC91628C29D42B9F006647D9 /* Release */ = {
+		CCFC1EB629D6B154008FE10E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_ENTITLEMENTS = SiriIntent/SiriIntent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZYCT87WATY;
+				DEVELOPMENT_TEAM = QB22A345HZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				INFOPLIST_FILE = SiriIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SiriIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPTTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPTe.SiriIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClonGPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClonGPT";
 			};
 			name = Release;
 		};
-		CC91628E29D42B9F006647D9 /* Debug */ = {
+		CCFC1ECA29D6B397008FE10E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_ENTITLEMENTS = SiriIntentUI/SiriIntentUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZYCT87WATY;
+				DEVELOPMENT_TEAM = QB22A345HZ;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SiriIntentUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SiriIntentUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPTUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPTe.SiriIntentUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ClonGPT;
 			};
 			name = Debug;
 		};
-		CC91628F29D42B9F006647D9 /* Release */ = {
+		CCFC1ECB29D6B397008FE10E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_ENTITLEMENTS = SiriIntentUI/SiriIntentUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZYCT87WATY;
+				DEVELOPMENT_TEAM = QB22A345HZ;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SiriIntentUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SiriIntentUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPTUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.ClonGPTe.SiriIntentUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ClonGPT;
 			};
 			name = Release;
 		};
@@ -592,20 +679,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC91628A29D42B9F006647D9 /* Build configuration list for PBXNativeTarget "ClonGPTTests" */ = {
+		CCFC1EB429D6B154008FE10E /* Build configuration list for PBXNativeTarget "SiriIntent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC91628B29D42B9F006647D9 /* Debug */,
-				CC91628C29D42B9F006647D9 /* Release */,
+				CCFC1EB529D6B154008FE10E /* Debug */,
+				CCFC1EB629D6B154008FE10E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC91628D29D42B9F006647D9 /* Build configuration list for PBXNativeTarget "ClonGPTUITests" */ = {
+		CCFC1EC929D6B397008FE10E /* Build configuration list for PBXNativeTarget "SiriIntentUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC91628E29D42B9F006647D9 /* Debug */,
-				CC91628F29D42B9F006647D9 /* Release */,
+				CCFC1ECA29D6B397008FE10E /* Debug */,
+				CCFC1ECB29D6B397008FE10E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

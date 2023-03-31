@@ -14,13 +14,19 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Button(action: {
-                    self.showingAPISettings = true
-                }) {
-                    Text("Configurar API")
-                }
-                .sheet(isPresented: $showingAPISettings) {
-                    APISettingsView()
+                HStack() {
+                    Spacer()
+                    Button(action: {
+                        self.showingAPISettings = true
+                    }) {
+                        Image(systemName: "key.fill")
+                            .renderingMode(.template)
+                            .foregroundColor(Color.blue)
+                            .padding(.trailing, 30)
+                    }
+                    .sheet(isPresented: $showingAPISettings) {
+                        APISettingsView()
+                    }
                 }
                 
                 ScrollView {
@@ -59,6 +65,7 @@ struct ContentView: View {
                         }
                     }
                 }
+                .scrollDismissesKeyboard(.immediately)
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background {
@@ -66,13 +73,17 @@ struct ContentView: View {
                 }
                 
                 HStack(alignment: .bottom) {
-                    TextField("Escriba un mensaje", text: $vm.newLine)
+                    TextField("Escriba un mensaje", text: $vm.newLine, axis: .vertical)
+                        .textFieldStyle(.roundedBorder)
                     Button(action: {
+                        hideKeyboard()
+                        if vm.newLine != "" {
                             Task {
                                 await vm.postLine()
                             }
+                        }
                     }, label: {
-                        Text("Enviar")
+                        Image(systemName: "paperplane.fill")
                     })
                 }
                 .padding()
@@ -89,3 +100,11 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+#if canImport(UIKit)
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+#endif

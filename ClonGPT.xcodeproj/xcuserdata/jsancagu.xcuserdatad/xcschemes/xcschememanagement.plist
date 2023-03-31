@@ -7,7 +7,40 @@
 		<key>ClonGPT.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>SiriIntent.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>SiriIntentUI.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CC91626229D42B9B006647D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC91627229D42B9F006647D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC91627C29D42B9F006647D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCFC1EA829D6B154008FE10E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -23,7 +23,8 @@ struct APISettingsView: View {
                 .padding(.horizontal)
             
             Button(action: {
-                UserDefaults.standard.set(vm.API_KEY, forKey: "ChatGPTAPIKey")
+                //UserDefaults.standard.set(vm.API_KEY, forKey: "ChatGPTAPIKey")
+                UserDefaults(suiteName: "group.clongpt.api")?.set(vm.API_KEY, forKey: "ChatGPTAPIKey")
                 self.presentationMode.wrappedValue.dismiss()
             }, label: {
                 Text("Guardar")

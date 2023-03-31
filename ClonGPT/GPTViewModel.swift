@@ -7,9 +7,10 @@
 
 import Foundation
 
-final class GPTViewModel: ObservableObject {
+class GPTViewModel: ObservableObject {
     
-    @Published var API_KEY = UserDefaults.standard.string(forKey: "ChatGPTAPIKey") ?? ""
+    @Published var API_KEY = UserDefaults(suiteName: "group.clongpt.api")?.string(forKey: "ChatGPTAPIKey") ?? ""
+    
     @Published var chat: [Message] = []
     @Published var newLine = ""
     @Published var showError = false
